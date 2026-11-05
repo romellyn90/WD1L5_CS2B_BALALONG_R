@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Grocery List</title>
+        <!-- Added rel="stylesheet" so the CSS file actually applies -->
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <section id="grocerySection">
+            <h2>Grocery Item List</h2>
+
+            <label for="item_name">Item Name</label><br>
+            <input type="text" id="item_name"><br>
+
+            <label for="item_qty">Quantity</label><br>
+            <input type="number" id="item_qty" min="1"><br><br>
+
+            <button type="button" onclick="addItem()">Add Item</button>
+            <button type="button" onclick="clearList()">Clear List</button>
+
+            <br><hr>
+            <h2>ANG LISTAHAN</h2>
+            <ul id="groceryList"></ul>
+        </section>
+
+        <!-- Links your JavaScript file -->
+        <script src="js/list.js"></script>
+    </body>
+</html>
